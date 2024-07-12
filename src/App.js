@@ -1,12 +1,12 @@
 import React from "react";
 import { ChakraProvider, Container } from "@chakra-ui/react";
-import Header from "./components/Header/Header";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <ChakraProvider>
       <Container maxW="container.xl">
-        <Header />
+        <Home />
         {/* Your other page components or routes can go here */}
       </Container>
     </ChakraProvider>
