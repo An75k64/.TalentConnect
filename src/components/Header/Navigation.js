@@ -19,31 +19,32 @@ const NAV_ITEMS = [
   {
     label: "Service",
     children: [
-      { label: "OnCampus", href: "#" },
-      { label: "Off campus", href: "#" },
-      { label: "Seminar", href: "#" },
-      { label: "Counseling", href: "#" },
-      { label: "Careercraft", href: "#" },
+      { label: "OnCampus", href: "/services#oncampus" },
+      { label: "Offcampus", href: "/services#offcampus" },
+      { label: "Seminar", href: "/services#seminar" },
+      { label: "Counselling", href: "/services#counseling" },
+      { label: "CareerCraft", href: "/services#careercraft" },
       {
         label: "Workforce provider",
         subLabel: "Staffing solution",
-        href: "#",
+        href: "/services#workforce",
       },
     ],
   },
   {
     label: "Jobs",
     children: [
-      { label: "Current opening", href: "#" },
-      { label: "Post your Resume", href: "#" },
+      { label: "Current opening", href: "/jobs" },
+      { label: "Post your Resume", href: "/jobs#post-resume" },
     ],
   },
-  { label: "Employer", href: "#" },
-  { label: "College", href: "#" },
-  { label: "CampusToCubicle", href: "#" },
-  { label: "Affiliate", href: "#" },
-  { label: "Contact us", href: "#" },
+  { label: "Employer", href: "/employer" },
+  { label: "College", href: "/college" },
+  { label: "CampusToCubicle", href: "/campus-to-cubicle" },
+  { label: "Affiliate", href: "/affiliate" },
+  { label: "Contact us", href: "/contact" }, // Update this line
 ];
+
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");

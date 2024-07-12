@@ -40,6 +40,7 @@ const Header = () => {
             }
             variant={"ghost"}
             aria-label={"Toggle Navigation"}
+            color={useColorModeValue("pink.600", "pink.300")} // Change color for the icon
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
