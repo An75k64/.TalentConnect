@@ -1,7 +1,16 @@
 import React from "react";
-import { Box, Flex, Text, IconButton, Stack, Collapse, useColorModeValue, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  IconButton,
+  Stack,
+  Collapse,
+  useColorModeValue,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { DesktopNav, MobileNav } from "./Navigation";  
+import { DesktopNav, MobileNav } from "./Navigation";
+import Logo from "./Logo"; // Import the Logo component
 
 const Header = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -31,16 +40,11 @@ const Header = () => {
             }
             variant={"ghost"}
             aria-label={"Toggle Navigation"}
+            color={useColorModeValue("pink.600", "pink.300")} // Change color for the icon
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo
-          </Text>
+          <Logo />
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -56,8 +60,6 @@ const Header = () => {
       </Flex>
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
-
-        {/* Include your mobile navigation component here */}
       </Collapse>
     </Box>
   );
