@@ -42,7 +42,7 @@ const NAV_ITEMS = [
   { label: "College", href: "/college" },
   { label: "CampusToCubicle", href: "/campus-to-cubicle" },
   { label: "Affiliate", href: "/affiliate" },
-  { label: "Contact us", href: "/contact" }, // Update this line
+  { label: "Contact us", href: "/contact" }, 
 ];
 
 

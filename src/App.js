@@ -1,7 +1,7 @@
 import React from "react";
-import { ChakraProvider, Container } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Jobs from "./pages/Jobs";
 import Employer from "./pages/Employer";
@@ -17,18 +17,16 @@ const App = () => {
     <ChakraProvider>
       <Router>
         <Header /> {/* Render Header at the top of all pages */}
-        <Container maxW="container.xl" py={5}>
-          <Routes>
-            
-            <Route path="/services" element={<Services />} />
-            <Route path="/jobs" element={<Jobs />} />
-            <Route path="/employer" element={<Employer />} />
-            <Route path="/college" element={<College />} />
-            <Route path="/campus-to-cubicle" element={<CampusToCubicle />} />
-            <Route path="/affiliate" element={<Affiliate />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </Container>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/jobs" element={<Jobs />} />
+          <Route path="/employer" element={<Employer />} />
+          <Route path="/college" element={<College />} />
+          <Route path="/campus-to-cubicle" element={<CampusToCubicle />} />
+          <Route path="/affiliate" element={<Affiliate />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
         <Footer /> {/* Render Footer at the bottom of all pages */}
       </Router>
     </ChakraProvider>

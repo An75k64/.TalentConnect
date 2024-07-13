@@ -1,16 +1,16 @@
 import React from "react";
-import { ChakraProvider, Container } from "@chakra-ui/react";
-import Header from "../../src/components/Header/Header";
-import Footer from "../../src/components/Footer";
+import { ChakraProvider } from "@chakra-ui/react";
+import Hero from "../components/Home/Hero";
+import CampusToCubicle from "../components/Home/CampusToCubicle";
+import About from "../components/Home/About";
 
 const Home = () => {
   return (
     <ChakraProvider>
-      <Container maxW="container.xl">
-        <Header />
-        <Footer />
-        {/* Your other page components or routes can go here */}
-      </Container>
+      <Hero />
+      <CampusToCubicle />
+      <About />
+      {/* Your other page components or routes can go here */}
     </ChakraProvider>
   );
 };

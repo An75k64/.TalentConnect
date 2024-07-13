@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs"; // Import LinkedIn icon
-import logo from "../assets/images/logo.png"; // Adjust the path if needed
+import logo from "../assets/images/Logo/logo.png"; // Adjust the path if needed
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -44,11 +44,13 @@ export default function Footer() {
           textAlign="left"
         >
           <Stack spacing={4}>
-            <img
-              src={logo}
-              alt="Talent Connect Logo"
-              style={{ height: "60px", width: "70px" }}
-            />
+            <a href="/">
+              <img
+                src={logo}
+                alt="Talent Connect Logo"
+                style={{ height: "60px", width: "70px" }}
+              />
+            </a>
             <Text fontSize="sm" color="black">
               © 2023 Talent Connect. All rights reserved
             </Text>
@@ -69,7 +71,7 @@ export default function Footer() {
             </Stack>
           </Stack>
           <Stack spacing={4}>
-            <Text fontWeight="bold" as="a" href="/home">
+            <Text fontWeight="bold" as="a" href="/">
               Home
             </Text>
             <Text fontWeight="bold" as="a" href="/services">

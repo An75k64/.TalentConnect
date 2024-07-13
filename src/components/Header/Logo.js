@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import logo from "../../assets/images/logo_01.png"; // Adjust the path to your logo image
+import logo from "../../assets/images/Logo/logo_01.png"; // Adjust the path to your logo image
 
 const Logo = () => {
   return (
