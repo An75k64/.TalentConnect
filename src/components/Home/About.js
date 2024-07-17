@@ -1,5 +1,5 @@
 import {
-  Button,
+  
   Flex,
   Heading,
   Image,
@@ -12,7 +12,7 @@ import {
 export default function About() {
   return (
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }} mt={10}>
-      <Flex flex={1} align={"center"} justify={"flex-start"} paddingLeft={8}>
+      <Flex  flex={1} align={"center"} justify={"center"} >
         <Box
           borderWidth={2}
           borderColor={"blue.400"}
@@ -31,16 +31,16 @@ export default function About() {
               alt={"About Us Image"}
               objectFit={"cover"}
               height="100%" // Keep the height at 100% to fit the container
-              maxHeight="100%" // Prevent exceeding the container's height
-              width="100%" // Ensure the image takes full width
+              //maxHeight="100%" // Prevent exceeding the container's height
+              //width="100%" // Ensure the image takes full width
               src={
-                "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               }
             />
           </Box>
         </Box>
       </Flex>
-      <Flex p={8} flex={1} align={"center"} justify={"flex-start"}>
+      <Flex p={8} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text
@@ -66,16 +66,18 @@ export default function About() {
           </Heading>
           <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
             We are dedicated to bridging the gap between talented individuals
-            and the dynamic workforce. Our mission is to provide top-notch
-            career services that empower individuals to achieve their
-            professional aspirations while supporting organizations in building
-            their dream teams.
+            and the dynamic workforce.
+          </Text>
+          <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
+            Our mission is to provide top-notch career services that empower
+            individuals to achieve their professional aspirations while
+            supporting organizations in building their dream teams.
           </Text>
           <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
             With a commitment to excellence, innovation, and integrity,
             TalentConnect is your trusted partner in career success.
           </Text>
-       {/*  <Stack direction={{ base: "column", md: "row" }} spacing={4}>
+          {/*  <Stack direction={{ base: "column", md: "row" }} spacing={4}>
             <Button
               rounded={"full"}
               bg={"blue.400"}

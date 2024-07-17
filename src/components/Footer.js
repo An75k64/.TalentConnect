@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs"; // Import LinkedIn icon
+import { HashLink as Link } from "react-router-hash-link"; // Import HashLink
 import logo from "../assets/images/Logo/logo.png"; // Adjust the path if needed
 
 const SocialButton = ({ children, label, href }) => {
@@ -74,60 +75,60 @@ export default function Footer() {
             <Text fontWeight="bold" as="a" href="/">
               Home
             </Text>
-            <Text fontWeight="bold" as="a" href="/services">
+            <Text fontWeight="bold" as={Link} to="/#our-services">
               Services
             </Text>
             <Stack spacing={1}>
-              <Text as="a" href="/services#oncampus">
+              <Text as={Link} to="/services#oncampus">
                 OnCampus
               </Text>
-              <Text as="a" href="/services#offcampus">
+              <Text as={Link} to="/services#offcampus">
                 OffCampus
               </Text>
-              <Text as="a" href="/services#seminar">
+              <Text as={Link} to="/services#seminar">
                 Seminar
               </Text>
-              <Text as="a" href="/services#counselling">
+              <Text as={Link} to="/services#counselling">
                 Counselling
               </Text>
-              <Text as="a" href="/services#careercraft">
+              <Text as={Link} to="/services#careercraft">
                 CareerCraft
               </Text>
-              <Text as="a" href="/services#workforce">
+              <Text as={Link} to="/services#workforce">
                 Workforce Provider [Staffing Solution]
               </Text>
             </Stack>
           </Stack>
           <Stack spacing={4}>
-            <Text fontWeight="bold" as="a" href="/jobs">
+            <Text fontWeight="bold" as={Link} to="/#ready-to-transform">
               Jobs
             </Text>
             <Stack spacing={1}>
-              <Text as="a" href="/jobs#current-openings">
+              <Text as={Link} to="/jobs/current-opening">
                 Current Openings
               </Text>
-              <Text as="a" href="/jobs#post-resume">
+              <Text as={Link} to="/jobs/post-resume">
                 Post Your Resume
               </Text>
             </Stack>
             <Stack spacing={4}>
-              <Text fontWeight="bold" as="a" href="/employer">
+              <Text fontWeight="bold" as={Link} to="/employer">
                 Employer
               </Text>
-              <Text fontWeight="bold" as="a" href="/college">
+              <Text fontWeight="bold" as={Link} to="/college">
                 College
               </Text>
             </Stack>
           </Stack>
           <Stack spacing={4}>
-            <Text fontWeight="bold" as="a" href="/campus-to-cubicle">
+            <Text fontWeight="bold" as={Link} to="/campus-to-cubicle">
               Campus to Cubicle
             </Text>
             <Stack spacing={4}>
-              <Text fontWeight="bold" as="a" href="/affiliate">
+              <Text fontWeight="bold" as={Link} to="/affiliate">
                 Affiliate
               </Text>
-              <Text fontWeight="bold" as="a" href="/contact">
+              <Text fontWeight="bold" as={Link} to="/contact">
                 Contact Us
               </Text>
             </Stack>

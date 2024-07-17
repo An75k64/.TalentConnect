@@ -7,7 +7,7 @@ import {
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom"; // Import Link
+import { HashLink as Link } from "react-router-hash-link"; // Import HashLink
 import heroImage from "../../assets/images/Home/hero.png";
 
 export default function Hero() {
@@ -19,6 +19,10 @@ export default function Hero() {
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
       zIndex={1}
+      transition="transform 0.5s ease-in-out"
+      _hover={{
+        transform: "scale(1.05)",
+      }}
     >
       <VStack
         w={"full"}
@@ -44,7 +48,7 @@ export default function Hero() {
             connect talent with opportunity.
           </Text>
           <Stack direction={"row"}>
-            <Link to="/services">
+            <Link to="/#our-services">
               <Button
                 bg={"blue.400"}
                 rounded={"full"}

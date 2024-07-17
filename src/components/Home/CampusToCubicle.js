@@ -8,6 +8,7 @@ import {
   useBreakpointValue,
   Box,
 } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 
 export default function CampusToCubicle() {
   return (
@@ -52,6 +53,8 @@ export default function CampusToCubicle() {
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
             <Button
+              as={RouterLink}
+              to="/jobs/post-resume"
               rounded={"full"}
               bg={"blue.400"}
               color={"white"}

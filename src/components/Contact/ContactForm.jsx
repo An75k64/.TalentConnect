@@ -43,7 +43,10 @@ export default function ContactForm() {
                 <Box>
                   <Heading>Contact Us</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                    Fill up the form below to contact us
+                    Have questions or need assistance?
+                  </Text>
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                    Contact TalentConnect today.
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack spacing={4} alignItems="flex-start">
